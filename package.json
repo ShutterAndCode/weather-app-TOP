@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "dev": "webpack serve --mode development",
-    "build": "webpack --mode production"
-  },
+ "scripts": {
+  "dev": "webpack serve --mode development",
+  "build": "webpack --mode production",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ShutterAndCode/weather-app-TOP.git"
@@ -18,12 +20,13 @@
   "bugs": {
     "url": "https://github.com/ShutterAndCode/weather-app-TOP/issues"
   },
-  "homepage": "https://github.com/ShutterAndCode/weather-app-TOP#readme",
+  "homepage": "https://ShutterAndCode.github.io/weather-app-TOP",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "css-loader": "^7.1.4",
     "dotenv": "^17.4.2",
     "eslint": "^10.5.0",
+    "gh-pages": "^6.3.0",
     "globals": "^17.6.0",
     "html-webpack-plugin": "^5.6.7",
     "style-loader": "^4.0.0",
