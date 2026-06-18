@@ -9,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const env = dotenv.config().parsed;
 
+
 export default {
   entry: "./src/index.js",
 
