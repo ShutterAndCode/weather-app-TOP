@@ -1,10 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>template</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-app-TOP</title>
+  </head>
+  <body>
+    <div id="titleBar">
+      <h1>Welcome to the Weather-app-TOP</h1>
+    </div>
+    <div id="inputLocation"></div>
+    <div id="displayWeather">
+      <div id="weatherInfo">
+        <p id="addressInfo" style="color: white;font-size: 1em;"></p>
+        <table id="dataTable">
+          <tr>
+            <th>Temperature</th>
+            <th>Feels Like</th>
+            <th>Conditions</th>
+            <th>Windspeed</th>
+          </tr>
+          <tr>
+            <td id="temperature">39°C</td>
+            <td id="feelsLike">34°C</td>
+            <td id="conditions">cloudy</td>
+            <td id="windSpeed">15 knots</td>
+          </tr>
+        </table>
+        <p id="description" style="color: white;font-size: 1em;"></p>
+      </div>
+      <div id="weatherGIF">
+      </div>
+    </div>
+  </body>
 </html>
